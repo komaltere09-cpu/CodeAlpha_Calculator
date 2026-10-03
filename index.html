@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <!-- Header -->
+        <div class="calculator-header">
+            <div>
+                <h1>Calculator</h1>
+                
+            </div>
+
+            <button id="historyToggle" class="history-btn" title="Calculation History">
+                ☰
+            </button>
+        </div>
+
+
+        <!-- Display -->
+        <section class="display">
+
+            <div id="expression" class="expression">
+                0
+            </div>
+
+            <div id="result" class="result">
+                0
+            </div>
+
+        </section>
+
+
+        <!-- History -->
+        <section id="historyPanel" class="history-panel">
+
+            <div class="history-header">
+                <h2>History</h2>
+
+                <button id="clearHistory">
+                    Clear
+                </button>
+            </div>
+
+            <div id="historyList" class="history-list">
+                <p class="empty-history">
+                    No calculations yet
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Calculator Buttons -->
+        <section class="buttons">
+
+            <!-- Row 1 -->
+            <button class="btn function" data-action="clear">
+                AC
+            </button>
+
+            <button class="btn function" data-action="delete">
+                ⌫
+            </button>
+
+            <button class="btn function" data-action="percent">
+                %
+            </button>
+
+            <button class="btn operator" data-value="/">
+                ÷
+            </button>
+
+
+            <!-- Row 2 -->
+            <button class="btn scientific" data-action="sqrt">
+                √
+            </button>
+
+            <button class="btn scientific" data-action="square">
+                x²
+            </button>
+
+            <button class="btn scientific" data-action="reciprocal">
+                1/x
+            </button>
+
+            <button class="btn operator" data-value="*">
+                ×
+            </button>
+
+
+            <!-- Row 3 -->
+            <button class="btn number" data-value="7">
+                7
+            </button>
+
+            <button class="btn number" data-value="8">
+                8
+            </button>
+
+            <button class="btn number" data-value="9">
+                9
+            </button>
+
+            <button class="btn operator" data-value="-">
+                −
+            </button>
+
+
+            <!-- Row 4 -->
+            <button class="btn number" data-value="4">
+                4
+            </button>
+
+            <button class="btn number" data-value="5">
+                5
+            </button>
+
+            <button class="btn number" data-value="6">
+                6
+            </button>
+
+            <button class="btn operator" data-value="+">
+                +
+            </button>
+
+
+            <!-- Row 5 -->
+            <button class="btn number" data-value="1">
+                1
+            </button>
+
+            <button class="btn number" data-value="2">
+                2
+            </button>
+
+            <button class="btn number" data-value="3">
+                3
+            </button>
+
+            <button class="btn scientific" data-action="plusMinus">
+                ±
+            </button>
+
+
+            <!-- Row 6 -->
+            <button class="btn number zero" data-value="0">
+                0
+            </button>
+
+            <button class="btn number" data-value="00">
+                00
+            </button>
+
+            <button class="btn number" data-value=".">
+                .
+            </button>
+
+            <button class="btn equals" data-action="equals">
+                =
+            </button>
+
+
+            <!-- Extra Row -->
+            <button class="btn scientific" data-action="pi">
+                π
+            </button>
+
+            <button class="btn scientific" data-action="openParen">
+                (
+            </button>
+
+            <button class="btn scientific" data-action="closeParen">
+                )
+            </button>
+
+            <button class="btn scientific" data-action="ans">
+                ANS
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <span>Keyboard supported</span>
+            <span>•</span>
+            <span>Modern Calculator</span>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
